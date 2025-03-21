@@ -131,7 +131,7 @@ public class TaskProvider extends ContentProvider {
         @Override
         public void onCreate(SQLiteDatabase sqLiteDatabase) {
             sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_NAME + " (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "id INTEGER PRIMARY KEY, " +
                     "title TEXT, " +
                     "description TEXT, " +
                     "due_time TEXT);");
